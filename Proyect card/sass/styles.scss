@@ -1,0 +1,99 @@
+@import "variables";
+@import "mixin";
+@import "variables";
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Figtree", serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-amarillo;
+}
+
+.card {
+  @include flex-c($justify: center, $align: center);
+  background-color: $color-blanco;
+  border: solid 1px $color-negro;
+  border-radius: 20px;
+  padding: $space-24px;
+  box-shadow: 8px 8px 0px 8px rgb(0, 0, 0, 1);
+  gap: $space-24px;
+  min-width: 327px;
+  margin: 0px 24px;
+}
+
+.contenido {
+  @include flex-c($justify: center, $align: start);
+  gap: $space-12px;
+  width: auto;
+}
+
+.chip {
+  background-color: $color-amarillo;
+  color: $color-negro;
+  padding: $space-4px $space-12px;
+  font-size: $tamano-12px;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+
+.card {
+  img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+h1 {
+  width: fit-content;
+  font-size: $tamano-20px;
+}
+
+.contenido {
+  p {
+    font-size: $tamano-14px;
+    color: $color-negro;
+    width: 100%;
+  }
+}
+
+.perfil {
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.perfil {
+  @include flex-r($justify: start);
+  gap: $space-12px;
+}
+
+.perfil {
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.contenidos-2 {
+  display: flex;
+  flex-direction: column;
+  gap: $space-12px;
+  width: 100%;
+}
+
+
+@import "media-querie";

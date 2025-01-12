@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Figtree", serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4d04e;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: solid 1px #111111;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 8px 8px 0px 8px rgb(0, 0, 0);
+  gap: 24px;
+  min-width: 327px;
+  margin: 0px 24px;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 12px;
+  width: auto;
+}
+
+.chip {
+  background-color: #f4d04e;
+  color: #111111;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+h1 {
+  width: fit-content;
+  font-size: 20px;
+}
+
+.contenido p {
+  font-size: 14px;
+  color: #111111;
+  width: 100%;
+}
+
+.perfil img {
+  width: 32px;
+  height: 32px;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+}
+
+.perfil p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.contenidos-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+@media (min-width: 375px) {
+  div.card {
+    width: 384px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .contenido p {
+    font-size: 16px;
+  }
+  .chip {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
